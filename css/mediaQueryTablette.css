@@ -1,0 +1,94 @@
+@media(min-width:768px) and (max-width:991px) {
+    body{
+        min-width: 768px;
+        max-width: 991px;
+    }
+    /* header */
+    header{
+        width: 100%;
+        padding: 0;
+    }
+    nav ul{
+        margin-right: 15%;
+    }
+    nav a:hover{
+        border-top: none;
+        padding-top: 0;
+    }
+    nav a:active{
+        color: #0065FC;
+    }
+    /* Rechercher */
+    .search {
+        text-align: center;
+    }
+    .research {
+        justify-content: center;
+    }
+    .icone{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .icone p{
+        width: 100%;
+    }
+    .filter {
+        margin-left: 0;
+    }
+    /* Hébergement */
+    #accommodation {
+        width: 100%;
+        padding-bottom: 5%;
+    }
+    #accommodation > a {
+        font-weight: bold;
+        margin-left: 5%;
+    }
+    /* Les plus populaires */
+    .doubleSection{
+        flex-direction: column-reverse;
+    }
+    aside {
+        width: 100%;
+    }
+    .popular {
+        max-width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+    .popular > a{
+        display: initial;
+    }
+    /* Activités */
+    #activities {
+        flex-direction: row;
+        height: auto;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    } 
+    .activitiesCard{
+        min-height: 200px;
+        max-height: 200px;
+        margin-bottom: 25px;
+    }
+    #activities > .activitiesCard.tall{
+        width: 30%;
+    }
+    .activitiesCard.small{
+        width: 46%;
+    }
+    .activitiesCard img{
+        object-position: 0;
+    }
+    #activities > .miniCard {
+        display: flex;
+        flex-direction: row;
+        width: 65%;
+    }
+    h3 {
+        padding-left: 2.5%;
+    }
+    /* Footer */
+}

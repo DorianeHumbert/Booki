@@ -1,0 +1,394 @@
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Body et général*/
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.fa-star {
+    color: #0065FC;
+}
+.etoileGrise {
+    color: #DBDBDB;
+}
+main {
+    padding-right: 3.4%; 
+    padding-left: 3.4%; 
+}
+
+/*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 4%;
+    padding-left: 1.7%;
+}
+.logo {
+    display: flex;
+    padding: 10px;
+}
+.logo img {
+    max-width: 100px;
+    max-height: 50px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.listeHeader {
+    margin-left: 40%;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    padding-top: 20px; /* cliquable dès le hover */
+}
+nav a:hover {
+    border-top: 2px solid #0065FC;
+    padding-top: 22px;
+    color: #0065FC;
+}
+/*Fin-header*/
+h1 {
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: 5px;
+}
+/*Partie rechercher*/
+.research {
+    display: flex;
+    margin-bottom: 30px;
+}
+.search p{
+    font-size: 15px;
+    margin-top: 5px;
+}
+.fa-map-marker-alt {
+    background-color: #F2F2F2;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+input {
+    border: 1px #F2F2F2 solid;
+    padding-left: 1.7%;
+    padding-right: 4%;
+}
+::placeholder {
+    font-size: 16px;
+    font-weight: bold ;
+    opacity: 1;
+}
+.fas.fa-search {
+    display: none;
+}
+.boutonRecherche {
+    background-color: #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 15px;
+    color: white;
+    font-weight: bold ;
+}
+/*Fin Partie rechercher*/
+
+/* Partie filtres*/
+.icone {
+    display: flex;
+}
+.icone p{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.icone span {
+    font-weight: bold;
+    padding: 15px;
+    padding-left: 8px;
+}
+.filter {
+    display: flex;
+    align-items: center;
+    border: 2px #F2F2F2 solid;
+    border-radius: 50px;
+    margin-left: 3%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    min-height: 40px;
+    max-height: 40px;
+}
+.filter:hover {
+    border:2px solid #F2F2F2;
+    background-color: #F9F9F9;
+    color: #0065FC;
+    box-shadow: 2px 2px 2px grey;
+}
+.filter i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    margin-left: -4px;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    color: #0065FC;
+}
+.fa-info {
+    border: 2px solid #F2F2F2;
+    border-radius: 100%;
+    color: #0065FC;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 5px;
+    font-size: 12px;
+}
+.info span {
+    font-size: 14px;
+}
+.info {
+    padding-bottom: 20px;
+}
+/*Fin partie filtres*/
+.doubleSection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+/* Partie Hébergements*/
+#accommodation {
+    width: 65%;
+    background-color: #F2F2F2 ;
+    border-radius: 25px;
+}
+#accommodation > a {
+    font-weight: bold;
+    margin-left: 5%;
+}
+#accommodation h2 {
+    font-size: 19px;
+    padding-left: 2%;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    justify-content: space-around;
+}
+.onlyCard {
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: white;
+    border: 5px solid white;
+    box-shadow: 3px 3px 6px gainsboro;
+    margin-bottom: 25px;
+}
+.cards a:hover{
+    box-shadow: 10px 15px 12px #a2a2a2;
+}
+.onlyCard .name {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 4%;
+}
+.onlyCard p {
+    margin: 1.5%;
+}
+.onlyCard div {
+    margin: 4%;
+}
+.onlyCard img {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 100px;
+    object-fit: cover;
+}
+.onlyCard .price {
+    font-size: 12px;
+    margin-left: 4%;
+    margin-bottom: 4%;
+}
+.onlyCard .stars {
+    display: flex;
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: auto;
+}
+/* Fin partie Hébergements*/
+.doubleSection h2{
+    margin-left: 20px;
+    padding-top: 35px;
+}
+h2 {
+    margin: 0%;  
+} 
+
+/* Les plus populaires*/
+aside {
+    width: 35%;
+}
+.fa-chart-line {
+    font-size: 22px;
+    padding-right: 10px;
+}
+.popular {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    padding-bottom: 15px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+.room {
+    display: flex;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 15px;
+    justify-content: flex-start;
+    margin: 15px;
+    padding-right: 9%;
+    box-shadow: 3px 3px 6px gainsboro;
+}
+.room:hover {
+    box-shadow: 10px 15px 12px #a2a2a2;
+}
+.popular img {
+    min-width: 40%;
+    width: 30%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    object-fit: cover;
+    height: 120px;
+}
+.text .name {
+    margin-top: 6px;
+    font-weight: bold;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 13px;
+    margin-right: 2%;
+    margin-bottom: 10px;
+}
+.room .name{
+    margin-bottom: 10px;
+}
+.room .price {
+    font-size: 12px;
+    margin: 0;
+}
+.room .stars{
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: auto;
+}
+/*Fin les plus populaires*/
+
+/* Activités*/
+
+#activities {
+   display: flex;
+   justify-content: space-between;
+   height: 400px;
+   margin-bottom: 50px;
+}
+#activities > .activitiesCard, #activities > .miniCard {
+    width: 23%;
+    height: 100%;
+}
+.miniCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.activitiesCard {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px gainsboro;
+}
+.activitiesCard:hover {
+    box-shadow: 10px 15px 12px #a2a2a2;
+}
+.activitiesCard img{
+    flex: 1;
+    min-height: 0;
+    object-fit: cover;
+    object-position: center 35%;
+}
+.activitiesCard p {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 6%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.activitiesCard.tall img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.activitiesCard.small img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.activitiesCard.small.one {
+    height: 57%;
+}
+.activitiesCard.small.two {
+    height: 35%;
+}
+.activitiesCard.small.three {
+    height: 45%;
+}
+.activitiesCard.small.four {
+    height: 47%;
+}
+/* Fin activités*/
+
+/*Footer*/
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    padding-left: 3%;
+}
+footer ul {
+    list-style: none;
+    padding-left: 0%;
+}
+footer li {
+    margin-bottom: 10px;
+}
+.footer {
+    width: 30%;
+    margin-right: 3%;
+}
+/* Fin footer*/
